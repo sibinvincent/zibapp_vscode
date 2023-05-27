@@ -5,6 +5,6 @@ from .models import Products
 
 def home(request):
 
-    x = Products.objects.all()
+    value = Products.objects.all()
     
-    return render(request,'index.html',{'x': x})
+    return render(request,'index.html',{'key': value})
